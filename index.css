@@ -1,0 +1,457 @@
+/* Style for the hole page */
+* {
+  margin: 0;
+  padding: 0;
+  font-family: "Poppins", sans-serif;
+}
+
+.mainContainerClass {
+  height: 100vh;
+  width: 100vw;
+  overflow: hidden;
+}
+
+/* Style for the background video part :  */
+#videoBackground {
+  width: 140%;
+}
+
+/* Style for the First container of the main container == First Loading Page */
+.firstLoadingImageClass {
+  background-image: url(/imgFiles/img_background.png);
+  background-repeat: no-repeat;
+  background-size: 100vw 100vh;
+  opacity: 90%;
+  width: 100vw;
+  height: 100vh;
+  display: flex;
+  align-items: center;
+  justify-content: space-around;
+}
+
+.firstLoadingImageStartBtnClass {
+  font-size: 60px;
+  font-weight: bold;
+  background-color: #0d81dc;
+  padding: 25px;
+  width: 30vw;
+  position: fixed;
+  bottom: 20px;
+  border-radius: 30px;
+  color: orange;
+  cursor: pointer;
+}
+
+/* Game Over Page Style == After the game finshes this page is displayed.*/
+.replacableElementsClass {
+  height: 100vh;
+  background-image: url(/imgFiles/tic-tac-toe.jpg);
+  background-repeat: no-repeat;
+  background-size: cover;
+  display: none;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+}
+
+.gameOverClass {
+  height: 300px;
+  width: 300px;
+  text-align: center;
+  border-radius: 10px;
+  background-color: white;
+  opacity: 85%;
+  display: flex;
+  justify-content: space-around;
+  flex-direction: column;
+  align-items: center;
+}
+
+.lastPageHomeBtnClass {
+  font-size: 40px;
+  font-weight: bold;
+  background-color: white;
+  padding: 10px;
+  width: 300px;
+  border-radius: 30px;
+  color: black;
+  cursor: pointer;
+  margin-top: 50px;
+  margin-bottom: 50px;
+}
+
+.lastPageEndGameBtnClass {
+  font-size: 30px;
+  font-weight: bold;
+  background-color: white;
+  padding: 10px;
+  width: 300px;
+  border-radius: 30px;
+  color: black;
+  cursor: pointer;
+}
+
+/* Second replacable elements : (Toss Page) */
+.replacableElementsTwoClass {
+  height: 100vh;
+  width: 100vw;
+  color: white;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+  display: none;
+  position: fixed;
+  bottom: 0;
+}
+
+.replacableElementsTwoClass h1,
+.replacableElementsTwoClass button,
+.replacableElementsTwoClass h4 {
+  margin-bottom: 50px;
+  color: white;
+  background: transparent;
+}
+
+.replacableElementsTwoClass button {
+  border: 2px solid white;
+}
+
+.tossContentClass {
+  background-color: red;
+  width: 100px;
+  height: 100px;
+  border-radius: 50px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+  font-size: 60px;
+  animation: rotateBlock 0.2s 10;
+}
+
+@keyframes rotateBlock {
+  50% {
+    transform: rotateX(180deg);
+  }
+}
+
+.replacableElementsTwoClass button {
+  padding: 10px;
+  border-radius: 20px;
+  font-size: 20px;
+  cursor: pointer;
+  margin-bottom: 30px;
+}
+
+/* Third Replacable Element : (User Input Page) */
+.replacableElementsThreeClass {
+  height: 100vh;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+  display: none;
+  position: fixed;
+  bottom: 0;
+  color: white;
+  overflow: hidden;
+}
+
+.userNameInputMainContainerClass {
+  display: flex;
+  align-items: center;
+  justify-content: space-around;
+  width: 100vw;
+  margin-top: 100px;
+  margin-bottom: 50px;
+}
+
+.userNameInputBoxGeneral {
+  height: 300px;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-around;
+  align-items: center;
+}
+
+.userNameInputBoxGeneral h3 {
+  font-size: 25px;
+}
+
+.userNameInputBoxGeneral input {
+  font-size: 20px;
+  border-radius: 20px;
+  padding: 10px 30px;
+  background: transparent;
+  border: 4px solid white;
+  color: wheat;
+}
+
+.userNameInputBoxGeneral input::placeholder {
+  color: white;
+  opacity: 1;
+}
+
+#userNameContinueBtn {
+  font-size: 30px;
+  border-radius: 20px;
+  padding: 10px 30px;
+  cursor: pointer;
+}
+
+.addPicGeneralBoxClass {
+  display: flex;
+  flex-direction: column;
+}
+
+.userNameInputPageHeading {
+  border: 4px solid red;
+  padding: 20px;
+  border-radius: 20px;
+  color: red;
+  animation: colorFlip 1s infinite;
+}
+
+@keyframes colorFlip {
+  50% {
+    color: black;
+  }
+}
+
+/* Middle Container Style :  */
+.middleContainerClass {
+  display: none;
+  justify-content: space-around;
+  align-items: center;
+  height: 100vh;
+  width: 100vw;
+  position: fixed;
+  bottom: 0;
+  color: white;
+}
+
+/* Play Box container Style :  */
+#playBoxSubMainContainerID {
+  width: 500px;
+  height: 340px;
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  margin-top: 80px;
+}
+
+/* Play Box Style :  */
+.playBoxsClassColumn1,
+.playBoxsClassColumn2 {
+  border-right: 3px solid wheat;
+}
+
+.playBoxsClassRow1,
+.playBoxsClassRow2 {
+  border-bottom: 3px solid wheat;
+}
+
+.playBoxsClass {
+  font-size: 80px;
+  width: 165px;
+  height: 100px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  cursor: pointer;
+}
+
+.pointsDisplayOnPlayGamePageContainerClass {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+/* Left and Rigth of the paly game box == User X and User 0 Styles come here : */
+.logo {
+  height: 550px;
+  width: 200px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  margin-right: 50px;
+  margin-left: 50px;
+}
+
+.logoHighlight {
+  border: 2px solid white;
+  border-radius: 20px;
+}
+
+.iconClass {
+  margin-top: 50px;
+}
+
+.playerName {
+  text-align: center;
+}
+
+.choiceIndicatorClass {
+  text-align: center;
+  margin-top: 40px;
+}
+
+.timerClass {
+  height: 90px;
+  width: 90px;
+  margin-top: 60px;
+  border: 4px solid white;
+  padding: 10px;
+  border-radius: 60px;
+  color: white;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.undoBtnClass {
+  margin-top: 50px;
+  width: 100px;
+  padding: 10px;
+  border-radius: 20px;
+  background-color: #ff9232;
+}
+
+@media screen and (max-width: 1300px) {
+  #videoBackground {
+    width: 300%;
+  }
+}
+@media screen and (max-width: 800px) {
+  #videoBackground {
+    width: 400%;
+  }
+  .middleContainerClass {
+    transform: rotate(90deg);
+  }
+}
+@media screen and (max-width: 600px) {
+  /* First Landing Page */
+  .firstLoadingImageStartBtnClass {
+    font-size: 30px;
+    padding: 15px;
+    width: 40vw;
+  }
+
+  /* User name Input Page :  */
+  .userNameInputBoxGeneral {
+    height: 200px;
+  }
+  .userNameInputBoxGeneral h3 {
+    font-size: 15px;
+  }
+  .userNameInputBoxGeneral input {
+    font-size: 10px;
+    border-radius: 20px;
+    padding: 5px 15px;
+    border: 2px solid white;
+  }
+  #userNameContinueBtn {
+    font-size: 20px;
+    border-radius: 20px;
+    padding: 5px 15px;
+  }
+  #userNameInputPageHeadingID {
+    font-size: 20px;
+  }
+
+  /* Toss Page :  */
+  .tossContentClass {
+    width: 100px;
+    height: 100px;
+    font-size: 60px;
+  }
+  #displayAboutTossBtnID {
+    text-align: center;
+  }
+  #displayTossWinnerOnTossPageID {
+    text-align: center;
+    font-size: 15px;
+  }
+
+  /* GAME PAGE :  */
+  /* Mian Container of game page :  */
+  .middleContainerClass {
+    transform: rotate(90deg);
+  }
+  /* Play Box container Style :  */
+  #playBoxSubMainContainerID {
+    width: 300px;
+    height: 200px;
+    margin-top: 40px;
+  }
+
+  /* Play Box Style :  */
+  .playBoxsClassColumn1,
+  .playBoxsClassColumn2 {
+    border-right: 2px solid wheat;
+  }
+
+  .playBoxsClassRow1,
+  .playBoxsClassRow2 {
+    border-bottom: 2px solid wheat;
+  }
+
+  .playBoxsClass {
+    font-size: 40px;
+    width: 100px;
+    height: 50px;
+  }
+
+  .pointsDisplayOnPlayGamePageContainerClass {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    font-size: 10px;
+  }
+
+  /* Left and Rigth of the paly game box == User X and User 0 Styles come here : */
+  .logo {
+    height: 400px;
+    width: 150px;
+  }
+
+  .logoHighlight {
+    border: 1px solid white;
+    border-radius: 20px;
+  }
+
+  .playerName {
+    text-align: center;
+    font-size: 15px;
+  }
+
+  .choiceIndicatorClass {
+    margin-top: 10px;
+    font-size: 15px;
+  }
+
+  .timerClass {
+    height: 40px;
+    width: 40px;
+    margin-top: 30px;
+    border: 2px solid white;
+    padding: 5px;
+  }
+
+  #playerGivenNameInGamePageXID {
+    font-size: 18px;
+  }
+  #playerGivenNameInGamePage0ID {
+    font-size: 18px;
+  }
+  img {
+    height: 10px;
+  }
+  /* Background part :  */
+  #videoBackground {
+    width: 500%;
+  }
+}
